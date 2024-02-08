@@ -22,6 +22,9 @@ jobs:
           
           docker build -t benson-test-blazor .
 
+          # delete the old container if there is one
+          docker rm -f benson-test-blazor-thing || true
+
           # run image
           docker run -d \
             -p 9876:8081 \
