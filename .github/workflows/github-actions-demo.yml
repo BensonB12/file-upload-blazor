@@ -24,7 +24,8 @@ jobs:
 
           # run image
           docker run -d \
-          -p 9876:8081 \
-          --name benson-test-blazor-thing 
+            -p 9876:8081 \
+            --name benson-test-blazor-thing \
+            benson-test-blazor
 
           echo "made it to the end *fire emoji*"
