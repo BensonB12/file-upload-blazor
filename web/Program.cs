@@ -7,6 +7,7 @@ using web.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
 builder.Services.Configure<HubOptions>(options =>
 {
     options.MaximumReceiveMessageSize = 1024 * 1024 * 200; // 200MB or use null
